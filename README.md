@@ -1,16 +1,16 @@
-# CL Cake Shop
+# GREEN-BEAN
 
 You can view the demo app at [hear](https://silly-granita-670854.netlify.app/)
 
 
 ## Description
 
-A simple cake online shop using Vue.js
+A green bean cake online shop using Vue.js
 
 
 ## Executing program
 
-npm run serve
+npm run dev
 
 ## Authors
-Tran Dan - tergitran@gmail.com
+Donald - realdonald9@gmail.com
