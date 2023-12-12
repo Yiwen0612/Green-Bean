@@ -1,0 +1,16 @@
+$color-white--one: #ffffff;
+$color-yellow--origin: #faba00;
+$color-yellow--one: #faba00;
+$color-gray--one: #cccccc;
+$color-brown--one: #333;
+$color-black--one: #ff000000;
+$color-black--two: #212529;
+$color-green--one: #008000;
+
+:export {
+  colorWhiteOne: $color-white--one;
+  colorYellowOrigin: $color-yellow--origin;
+}
+
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+@import "node_modules/bootstrap-vue/src/index.scss";

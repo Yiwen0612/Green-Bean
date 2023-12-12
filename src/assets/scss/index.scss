@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bitter", serif;
+}
+
+a.router-link-active {
+  color: inherit;
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.b-toaster-leave-active {
+  width: 100%;
+}
+
+.max-content div {
+  width: max-content;
+}
+
+.b-toast-success {
+  .toast {
+    background-color: rgba($color: $color-yellow--origin, $alpha: 1) !important;
+    color: $color-black--two;
+  }
+}
+
+.custom-control .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: $color-yellow--origin;
+  border: $color-yellow--origin;
+}
+.custom-control
+  .custom-control-input:not(:disabled):active
+  ~ .custom-control-label::before {
+  background-color: rgba($color: $color-yellow--origin, $alpha: 0.8);
+  border: rgba($color: $color-yellow--origin, $alpha: 0.8);
+}
+
+.custom-control .custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: 0 0 0 0.2rem rgba($color: $color-yellow--origin, $alpha: 0.25);
+}
+
+.form-group input.form-control:focus {
+  border-color: $color-yellow--origin;
+  box-shadow: 0 0 0 0.2rem rgba($color: $color-yellow--origin, $alpha: 0.25);
+}
+
+.btn-outline-secondary {
+  &:hover {
+    opacity: 0.5;
+  }
+}
