@@ -96,6 +96,21 @@
                         </b-form-group>
                       </b-col>
                     </b-row>
+                    <b-row class="">
+                      <b-col>
+                        <b-form-group
+                          id="fieldset-2"
+                          label="Enter your address *"
+                          label-for="input-4"
+                        >
+                          <b-form-input
+                            id="input-4"
+                            v-model="billInfo.address"
+                            trim
+                          ></b-form-input>
+                        </b-form-group>
+                      </b-col>
+                    </b-row>
                     <b-row>
                       <b-col cols="12" md="7">
                         <b-form-group

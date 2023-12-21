@@ -107,6 +107,7 @@ export default {
         name: this.billInfo.name,
         email: this.billInfo.email,
         phone: this.billInfo.phone,
+        address: this.billInfo.address,
         message: emailContent,
         price: this.$store.getters.totalPrice
       };
