@@ -17,7 +17,7 @@
       </p>
       <p>
         If you have any questions or need assistance, our dedicated support team
-        is here to help. Feel free to reach out at YYY.XXX.XXX.
+        is here to help. Feel free to reach out at 438.979.8803.
       </p>
       <p>
         Once again, thank you for your purchase. We're looking forward to making

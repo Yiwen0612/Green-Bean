@@ -1,52 +1,62 @@
 [
   {
     "id": 1,
-    "name": "Chocolate Fudge Cake",
-    "imageUrl": "https://ucarecdn.com/9bb58e5f-4e0b-4e03-ba3a-e2deabc24dbb/1.jpg",
-    "description": "Decadent chocolate fudge cake with a rich, moist texture.",
-    "originalPrice": 25.99,
+    "name": "Green Bean Cake - Little Sugar",
+    "imageUrl": "https://ucarecdn.com/74fc6794-4b1f-4ac2-8144-e27dc48f751c/IMG_2169.jpg",
+    "description": "Original Flavour, Little Sugar",
+    "originalPrice": 15.99,
     "onsale": true,
-    "discount": 19.99,
-    "inventory": 10
+    "discount": 6.99,
+    "inventory": 1000000
   },
   {
     "id": 2,
-    "name": "Strawberry Cheesecake",
-    "imageUrl": "https://ucarecdn.com/483af0d7-fb57-4c79-a55d-a09b3eb55a1d/2.jpg",
-    "description": "Creamy strawberry cheesecake with a buttery graham cracker crust.",
-    "originalPrice": 29.99,
-    "onsale": false,
-    "discount": null,
-    "inventory": 5
+    "name": "Green Bean Cake - Normal Sugar",
+    "imageUrl": "https://ucarecdn.com/b0cdffc3-3c2c-41f1-af90-8e67a5191223/IMG_2168.jpg",
+    "description": "Original Flavour, Normal Sugar",
+    "originalPrice": 15.99,
+    "onsale": true,
+    "discount": 6.99,
+    "inventory": 1000000
   },
   {
     "id": 3,
-    "name": "Mango Cake",
-    "imageUrl": "https://ucarecdn.com/a5ab39aa-eff1-485a-8d7a-6f9a987ab96b/3.jpg",
-    "description": "Classic mango cake with walnuts and cream cheese frosting.",
-    "originalPrice": 21.99,
+    "name": "Green Bean Cake - Extra Sugar",
+    "imageUrl": "https://ucarecdn.com/481057e0-c144-4baa-a312-dea1b1a8dc6e/IMG_2167.jpg",
+    "description": "Original Flavour, Extra Sugar",
+    "originalPrice": 15.99,
     "onsale": true,
-    "discount": 16.99,
-    "inventory": 8
+    "discount": 6.99,
+    "inventory": 1000000
   },
   {
     "id": 4,
-    "name": "Almond Cake",
-    "imageUrl": "https://ucarecdn.com/d50dd904-2e86-462c-840d-6c334d3ab93a/4.jpg",
-    "description": "An abundance of fresh mixed fruits cake.",
-    "originalPrice": 27.99,
-    "onsale": false,
-    "discount": null,
-    "inventory": 3
+    "name": "Mung Bean Cake & Adzuki Bean Filling - Little Sugar",
+    "imageUrl": "https://ucarecdn.com/74fc6794-4b1f-4ac2-8144-e27dc48f751c/IMG_2169.jpg",
+    "description": "Mung Bean Cake & Adzuki Bean Filling - Little Sugar",
+    "originalPrice": 15.99,
+    "onsale": true,
+    "discount": 6.99,
+    "inventory": 1000000
   },
   {
     "id": 5,
-    "name": "Blackforest Cake",
-    "imageUrl": "https://ucarecdn.com/05289be6-7dfb-4ea5-b17e-110651e0417c/5.jpg",
-    "description": "Soft chocolate sponge layered with dark sweet cherries decorated with premium chocolate shavings",
-    "originalPrice": 18.99,
+    "name": "Mung Bean Cake & Adzuki Bean Filling - Normal Sugar",
+    "imageUrl": "https://ucarecdn.com/b0cdffc3-3c2c-41f1-af90-8e67a5191223/IMG_2168.jpg",
+    "description": "Mung Bean Cake & Adzuki Bean Filling - Normal Sugar",
+    "originalPrice": 15.99,
     "onsale": true,
-    "discount": 14.99,
-    "inventory": 12
+    "discount": 6.99,
+    "inventory": 1000000
+  },
+  {
+    "id": 6,
+    "name": "Mung Bean Cake & Adzuki Bean Filling - Extra Sugar",
+    "imageUrl": "https://ucarecdn.com/481057e0-c144-4baa-a312-dea1b1a8dc6e/IMG_2167.jpg",
+    "description": "Mung Bean Cake & Adzuki Bean Filling - Extra Sugar",
+    "originalPrice": 15.99,
+    "onsale": true,
+    "discount": 6.99,
+    "inventory": 1000000
   }
 ]
