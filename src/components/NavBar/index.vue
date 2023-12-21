@@ -3,7 +3,7 @@
     <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
 
     <b-navbar-brand>
-      <router-link :to="PATH.ROOT"> CL CAKE </router-link>
+      <router-link :to="PATH.ROOT"> DuDu CAKE </router-link>
     </b-navbar-brand>
     <b-navbar-brand class="cart">
       <router-link :to="PATH.CART">

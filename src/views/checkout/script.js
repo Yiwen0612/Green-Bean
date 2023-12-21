@@ -3,7 +3,7 @@ import TextInput from "@/components/TextInput";
 import Table from "@/components/Table";
 import PATH from "@/router/paths";
 import { formatCurrency } from "@/utils";
-
+import emailjs from 'emailjs-com';
 export default {
   name: "Checkout",
   components: {
@@ -32,6 +32,7 @@ export default {
         name: "",
         email: "",
         phone: "",
+        address: "",
       },
       isInBilling: false,
       check: false,
@@ -46,7 +47,7 @@ export default {
       return this.$store.getters.totalPrice;
     },
     shippingFee() {
-      return this.billInfo.shippingMethod === "pickup" ? 0 : 2;
+      return this.billInfo.shippingMethod === "pickup" ? 0 : 0;
     },
     nameState() {
       if (!this.check) {
@@ -58,7 +59,7 @@ export default {
       if (!this.check) {
         return null;
       }
-      return /^(03|05|07|08|09)[0-9]{8}$/.test(this.billInfo.phone);
+      return /^(\(\d{3}\) ?|\d{3}[-.]?)\d{3}[-.]?\d{4}$/.test(this.billInfo.phone);
     },
   },
   created() {},
@@ -81,6 +82,7 @@ export default {
       this.check = true;
       if (this.nameState) {
         // clear cart
+        this.sendEmail()
         this.$router.push(PATH.GRATITUDE).then(() => {
           this.$store.dispatch("updateCart", []);
         });
@@ -89,7 +91,35 @@ export default {
     onResize() {
       this.isMobile = window.innerWidth < 768;
     },
+
+
+    sendEmail() {
+      // eslint-disable-next-line no-unused-vars
+      let emailContent = ''
+      this.$store.state.productsIncart.forEach((item, index) => {
+        emailContent += `Item ${index + 1}:\n`;
+        emailContent += `- Name: ${item.name}\n`;
+        emailContent += `- Quantity: ${item.quantity}\n`;
+        // Include other necessary details like imageurl, description, etc. if needed
+        emailContent += `\n`;
+      })
+      let templateParams = {
+        name: this.billInfo.name,
+        email: this.billInfo.email,
+        phone: this.billInfo.phone,
+        message: emailContent,
+        price: this.$store.getters.totalPrice
+      };
+      emailjs.send('service_rekna4m', 'template_lgterdr', templateParams,
+        'nmSooxOzfp6ejjO95') .then(function(response) {
+        console.log('SUCCESS!', response.status, response.text);
+      }, function(error) {
+        console.log('FAILED...', error);
+      });
+
+    },
   },
+
   beforeDestroy() {
     window.removeEventListener("resize", this.onResize, { passive: true });
   },

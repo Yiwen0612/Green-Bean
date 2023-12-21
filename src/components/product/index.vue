@@ -45,9 +45,9 @@
               >{{ product.discount }}$</span
             >
           </div>
-          <div class="cart-container__stock">
-            {{ product.inventory }} in stock
-          </div>
+          <!--<div class="cart-container__stock">-->
+          <!--  {{ product.inventory }} in stock-->
+          <!--</div>-->
         </div>
       </div>
       <template #modal-footer>
